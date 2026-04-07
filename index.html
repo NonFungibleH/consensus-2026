@@ -741,6 +741,48 @@
 
     .form-error.visible { display: block; }
 
+    .form-steps {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 20px 0 24px;
+      padding: 16px 20px;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .form-step {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .step-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .form-step-sep {
+      width: 1px;
+      height: 32px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
     .form-note {
       text-align: center;
       margin-top: 16px;
@@ -904,6 +946,8 @@
       .features-grid { grid-template-columns: 1fr; }
       .hero-visual { max-width: 100%; }
       .pricing-row { flex-wrap: wrap; gap: 8px; }
+      .form-steps { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .form-step-sep { width: 32px; height: 1px; }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -1201,9 +1245,9 @@
     <div class="container">
       <div class="form-card fade-up">
         <div class="section-header">
-          <span class="section-label">Limited Offer</span>
-          <h2>Claim Your Consensus 2026 Discount</h2>
-          <p>Submit your details and our team will reach out within 24 hours with your exclusive discount code.</p>
+          <span class="section-label">Consensus 2026 Exclusive</span>
+          <h2>Get a Free Demo + 20% Off Pro</h2>
+          <p>Drop your details and I'll reach out personally to walk you through the platform — so you know exactly how Team Finance fits your project and can hit the ground running.</p>
           <div class="pricing-display">
             <div class="pricing-row">
               <span class="price-was">$2,500<span class="price-period">/yr</span></span>
@@ -1234,17 +1278,33 @@
             <label for="description">What are you building? <span class="optional">(optional)</span></label>
             <textarea id="description" name="description" placeholder="Tell us about your project and what you need..."></textarea>
           </div>
-          <button type="submit" class="form-submit">Get My 20% Discount</button>
+          <div class="form-steps">
+            <div class="form-step">
+              <span class="step-num">1</span>
+              <span>Submit your details</span>
+            </div>
+            <div class="form-step-sep"></div>
+            <div class="form-step">
+              <span class="step-num">2</span>
+              <span>I'll reach out to schedule a free 30-min demo</span>
+            </div>
+            <div class="form-step-sep"></div>
+            <div class="form-step">
+              <span class="step-num">3</span>
+              <span>Launch with confidence — with 20% off Pro</span>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">Book My Free Demo</button>
           <div class="form-error" id="form-error"></div>
-          <p class="form-note">We'll never share your information. See you in Miami.</p>
+          <p class="form-note">No sales pressure. Just a genuine walkthrough to see if it's a fit. See you in Miami.</p>
         </form>
 
         <div class="form-success" id="form-success">
           <div class="check-circle">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
           </div>
-          <h3>You're all set!</h3>
-          <p>We'll be in touch within 24 hours with your exclusive Consensus discount.</p>
+          <h3>You're on the list!</h3>
+          <p>I'll reach out within 24 hours to schedule your personal walkthrough. Looking forward to helping you launch.</p>
         </div>
       </div>
     </div>
