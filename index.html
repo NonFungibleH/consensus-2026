@@ -117,35 +117,20 @@
     }
 
     .hero-product-frame {
-      background: #0F172A;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 32px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.08);
+      box-shadow:
+        0 0 0 1px rgba(29, 101, 220, 0.08),
+        0 8px 32px rgba(29, 101, 220, 0.12),
+        0 32px 80px rgba(29, 101, 220, 0.10),
+        0 2px 8px rgba(0,0,0,0.06);
     }
-
-    .hero-product-topbar {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 14px;
-      background: #1E293B;
-    }
-
-    .hero-product-topbar span {
-      display: block;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-    }
-
-    .hero-product-topbar span:nth-child(1) { background: #FF5F57; }
-    .hero-product-topbar span:nth-child(2) { background: #FFBD2E; }
-    .hero-product-topbar span:nth-child(3) { background: #28CA41; }
 
     .hero-product-img {
       width: 100%;
       height: auto;
       display: block;
+      border-radius: 16px;
     }
 
     .hero-consensus-badge {
@@ -1033,9 +1018,6 @@
         <!-- Right: Dashboard screenshot + Consensus badge -->
         <div class="hero-visual">
           <div class="hero-product-frame">
-            <div class="hero-product-topbar">
-              <span></span><span></span><span></span>
-            </div>
             <img src="dashboard.webp" alt="Team Finance Dashboard" class="hero-product-img" />
           </div>
           <div class="hero-consensus-badge">
