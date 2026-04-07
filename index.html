@@ -62,9 +62,33 @@
     .banner-inner {
       display: flex;
       align-items: center;
+      gap: 14px;
     }
 
     .banner-tf svg { height: 22px; width: auto; }
+
+    .banner-x {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-tertiary);
+      font-size: 15px;
+    }
+
+    .banner-consensus {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: #00AACC;
+      text-transform: uppercase;
+    }
+
+    .banner-year {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      letter-spacing: 0.02em;
+    }
 
     /* ─── HERO ─────────────────────────────────────────── */
     .hero {
@@ -98,8 +122,8 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 56px;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 48px;
       align-items: center;
     }
 
@@ -110,10 +134,7 @@
     /* Dashboard screenshot + Consensus badge */
     .hero-visual {
       flex-shrink: 0;
-      width: 420px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+      width: 540px;
     }
 
     .hero-product-frame {
@@ -983,6 +1004,11 @@
           </defs>
         </svg>
       </div>
+      <div class="banner-x">
+        <span>×</span>
+        <span class="banner-consensus">CONSENSUS</span>
+        <span class="banner-year">2026</span>
+      </div>
 
     </div>
   </div>
@@ -997,7 +1023,7 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="dot"></span>
-            Consensus 2026 Exclusive Offer
+            Exclusive offer for Consensus attendees · May 5–7, Miami
           </div>
           <h1>Launch Your Token<br>with <span class="highlight">Confidence</span></h1>
           <p>Get 20% off the Team Finance Pro Plan — everything you need to create, lock, vest, and distribute your token. Exclusively for Consensus 2026 attendees.</p>
@@ -1014,7 +1040,7 @@
           <div class="hero-product-frame">
             <img src="dashboard.webp" alt="Team Finance Dashboard" class="hero-product-img" />
           </div>
-          <div class="hero-consensus-badge">
+          <div class="hero-consensus-badge" style="display:none">
             <svg width="130" viewBox="0 0 160 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M117.444 27.6197V26.3361H118.786V27.6197H117.444ZM117.455 34.061V28.2965H118.762V34.061H117.455Z" fill="white"/>
             <path d="M106.857 34.061V28.2965H108.164L108.117 29.8134H108.129C108.385 28.8216 109.085 28.2031 110.136 28.2031C111.256 28.2031 111.979 28.7866 112.119 29.7201H112.131C112.341 28.7866 113.041 28.2031 114.138 28.2031C115.422 28.2031 116.157 29.0316 116.157 30.3852V34.061H114.85V30.677C114.85 29.8368 114.442 29.3234 113.66 29.3234C112.75 29.3234 112.166 30.0002 112.166 31.2021V34.061H110.859V30.6536C110.859 29.8368 110.427 29.3234 109.646 29.3234C108.759 29.3234 108.164 30.0118 108.164 31.2487V34.061H106.857Z" fill="white"/>
