@@ -555,6 +555,180 @@
     .chain-dot:nth-child(3) { opacity: 0.7; }
     .chain-dot:nth-child(4) { opacity: 1; }
 
+    /* ─── WHITELABEL ────────────────────────────────────── */
+    .whitelabel {
+      padding: 80px 0 88px;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .whitelabel-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .whitelabel-left .section-label {
+      margin-bottom: 16px;
+    }
+
+    .whitelabel-not-included {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FEF3C7;
+      color: #92400E;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .whitelabel-left h2 {
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .whitelabel-left p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .whitelabel-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .whitelabel-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .whitelabel-points li::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      margin-top: 1px;
+      background: var(--tf-blue);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 8l3 3 6-6' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
+    .whitelabel-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--tf-blue);
+      text-decoration: none;
+    }
+
+    .whitelabel-cta:hover { text-decoration: underline; }
+
+    .whitelabel-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .whitelabel-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+
+    .whitelabel-card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #EEF4FF 0%, #DBEAFE 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .whitelabel-card-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--tf-blue);
+    }
+
+    .whitelabel-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .whitelabel-card p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .whitelabel-card-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .whitelabel-price-note {
+      margin-top: 16px;
+      padding: 14px 18px;
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .whitelabel-price-note span {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .whitelabel-price-note strong {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .whitelabel-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+
     /* ─── FORM ──────────────────────────────────────────── */
     .form-section {
       padding: 88px 0 100px;
@@ -1238,6 +1412,62 @@
           <span class="chain-dot"></span>
         </span>
         <strong>Battle-tested across 20+ blockchains</strong> — Ethereum, Solana, Base, BSC, Arbitrum, Polygon &amp; more
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHITELABEL ──────────────────────────────────────── -->
+  <section class="whitelabel">
+    <div class="container">
+      <div class="whitelabel-inner">
+
+        <div class="whitelabel-left fade-up">
+          <div class="whitelabel-not-included">
+            ⚡ Add-on — not included in Pro Plan
+          </div>
+          <h2>Want it fully branded<br>on your own site?</h2>
+          <p>Team Finance offers white-label versions of its vesting and staking tools — fully customised to your brand, embedded directly on your domain. Your users never have to leave your site.</p>
+          <ul class="whitelabel-points">
+            <li>Your colours, your logo, your domain</li>
+            <li>No smart contracts, backend, or audits to manage</li>
+            <li>Delivered as an NPM package or web component</li>
+            <li>Get started in days, not months</li>
+            <li>Reduces token sell pressure by incentivising long-term holding</li>
+          </ul>
+          <a href="https://www.team.finance/whitelabel" target="_blank" rel="noopener" class="whitelabel-cta">
+            Learn more about White-Label
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="whitelabel-right fade-up">
+          <div class="whitelabel-cards">
+
+            <div class="whitelabel-card">
+              <div class="whitelabel-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+              </div>
+              <h3>Vesting Widget</h3>
+              <p>Let your investors claim vested tokens through a fully branded interface on your site — no redirects to Team Finance.</p>
+              <span class="whitelabel-card-tag">Custom domain · CSS themeable</span>
+            </div>
+
+            <div class="whitelabel-card">
+              <div class="whitelabel-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3>Staking Widget</h3>
+              <p>Run staking campaigns and reward your community — all through a seamless branded experience on your domain.</p>
+              <span class="whitelabel-card-tag">Custom domain · CSS themeable</span>
+            </div>
+
+          </div>
+          <div class="whitelabel-price-note">
+            <span>Available as a separate engagement — pricing on request</span>
+            <strong>From $8,000</strong>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
