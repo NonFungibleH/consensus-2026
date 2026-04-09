@@ -1171,6 +1171,41 @@
     .fade-up:nth-child(5) { transition-delay: 0.32s; }
     .fade-up:nth-child(6) { transition-delay: 0.40s; }
 
+    /* ─── STATS AUDIT ROW ───────────────────────────────── */
+    .stats-audit-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 44px;
+      padding: 18px 28px;
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .stats-audit-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .stats-audit-divider {
+      width: 1px;
+      height: 22px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .stats-audit-row { flex-direction: column; gap: 12px; }
+      .stats-audit-divider { display: none; }
+    }
+
     /* ─── AUDIT BADGES ───────────────────────────────────── */
     .audit-strip {
       display: flex;
@@ -1549,6 +1584,17 @@
 
       </div>
 
+      <!-- Triple audited -->
+      <div class="stats-audit-row fade-up">
+        <span class="stats-audit-label">Triple-audited smart contracts</span>
+        <div class="stats-audit-divider"></div>
+        <div class="audit-badges-row">
+          <img src="certik.svg" alt="CertiK" />
+          <img src="hacken.svg" alt="Hacken" />
+          <img src="bailsec.svg" alt="BailSec" />
+        </div>
+      </div>
+
       <div class="stats-footer fade-up">
         <span>Powered by</span>
         <!-- TrustSwap Logo -->
@@ -1711,7 +1757,7 @@
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
           </button>
           <div class="faq-answer">
-            You'll get a personal walkthrough with someone from the Team Finance team — not a generic sales call. They'll listen to your project, show you exactly how the tools fit your needs, and answer every question you have. There's no commitment and no pressure.
+            You'll get a personal walkthrough with Ivan Anastassov from the Team Finance Business Development team — not a generic sales call. Ivan will listen to your project, show you exactly how the tools fit your needs, and answer every question you have. There's no commitment and no pressure.
           </div>
         </div>
 
@@ -1775,24 +1821,12 @@
         <!-- Who you'll speak with -->
         <div class="colleague-card">
           <div class="colleague-avatar">
-            <!-- Replace with: <img src="colleague-photo.jpg" alt="[Name]" /> -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <img src="ivan.jpg" alt="Ivan Anastassov" />
           </div>
           <div class="colleague-info">
             <div class="colleague-intro">Who you'll speak with</div>
-            <div class="colleague-name">[Colleague Name]</div>
-            <div class="colleague-title">Team Finance · [Title]</div>
-          </div>
-        </div>
-
-        <!-- Audit badges -->
-        <div class="audit-strip">
-          <span class="audit-strip-label">Security Audited By</span>
-          <div class="audit-strip-divider"></div>
-          <div class="audit-badges-row">
-            <img src="certik.svg" alt="CertiK" />
-            <img src="hacken.svg" alt="Hacken" />
-            <img src="bailsec.svg" alt="BailSec" />
+            <div class="colleague-name">Ivan Anastassov</div>
+            <div class="colleague-title">Team Finance · Business Development</div>
           </div>
         </div>
 
