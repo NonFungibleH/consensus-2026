@@ -1848,9 +1848,15 @@
               <input type="email" id="email" name="email" placeholder="you@project.com" required>
             </div>
           </div>
-          <div class="form-group">
-            <label for="project">Project Name <span class="optional">(optional)</span></label>
-            <input type="text" id="project" name="project" placeholder="Your project or company name">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project">Project Name <span class="optional">(optional)</span></label>
+              <input type="text" id="project" name="project" placeholder="Your project or company name">
+            </div>
+            <div class="form-group">
+              <label for="telegram">Telegram <span class="optional">(optional)</span></label>
+              <input type="text" id="telegram" name="telegram" placeholder="@yourhandle">
+            </div>
           </div>
           <div class="form-group">
             <label for="description">What are you building? <span class="optional">(optional)</span></label>
@@ -1978,6 +1984,7 @@
         name: form.name.value.trim(),
         email: form.email.value.trim(),
         project: form.project.value.trim(),
+        telegram: form.telegram.value.trim(),
         description: form.description.value.trim()
       };
 
